@@ -1,0 +1,89 @@
+/* *{
+    padding: 0px;
+    margin: 0px;
+}
+
+.gradientes{
+    height: 20vh;
+    background-color: aqua;
+    background-image: linear-gradient(to left, rgb(30, 0, 255),yellow,  rgb(30, 0, 255));
+    background-image: radial-gradient(red, yellow); 
+} */
+
+/* .ejemplo_box{
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    transform: skew(25deg);
+} */
+
+/* .ejemploTransicion{
+    background-color: brown;
+    height: 150px;
+    width: 150px;
+    transition: all 2s;
+    border: solid 1px;
+    propiedad duracion
+}
+
+.ejemploTransicion:hover{
+    height: 200px;
+    width: 200px;
+    padding: 2rem;
+    background-color: aqua;
+}
+
+.ejemplo_2{
+    padding-top: 2rem;
+}
+
+.input{
+    width: 100px;
+    height: 100px;
+    transition: all 2s;
+}
+
+.input:focus{
+    width: 200px;
+    height: 200px;
+    font-size: 24px;
+}
+*/
+
+/* .seccion{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    animation-name: un_efecto;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+.titulo{
+    animation-name: oferta;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes oferta{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes un_efecto{
+    0%{ width: 100px;}
+    0.2%{ width: 50px;}
+    25{width: 300px;}
+    50%{width: 200px; background-color:red;}
+    75%{width: 300px; height:120px;}
+    100%{
+        width: 100px;
+        background-color:green;
+    } 
+} */

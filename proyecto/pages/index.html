@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PapeleraCesar - Bienvenidos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/trabajoIntegrador/css-puro/style.css">
+    <link rel="stylesheet" href="/trabajoIntegrador/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Papelera Cesar</h1>
+    </header>
+
+    <nav>
+        <a href="/proyecto/pages/index.html">Home</a>
+        <a href="/proyecto/pages/productos.html">Productos</a>
+        <a href="/proyecto/pages/contacto.html">Contacto</a>
+        <button id="verCarrito">Ver Carrito</button> <!-- Este es el botón para abrir el carrito -->
+    </nav>
+
+    <section id="home" class="fade-in">
+        <h2>Bienvenido a nuestra Tienda Online</h2>
+        <p>Aquí encontrarás los mejores productos al mejor precio.</p>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 PapeleraCesar. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <!-- Modal del Carrito -->
+    <div id="modalCarrito" class="modal">
+        <h2>Tu Carrito</h2>
+        <ul id="contenidoCarrito">
+            <!-- Aquí se mostrarán los productos añadidos al carrito -->
+        </ul>
+        <p id="totalCarrito">Total: $0</p>
+        <button id="pagarCarrito">Realizar Pago</button>
+        <button id="cerrarModal">Cerrar</button>
+    </div>
+
+
+    <!-- <div id="contenedor">
+        <div class="navbar-logo">
+            <a href="index.html"><img src="/proyecto/imagenes/4.png" alt="logo"></a>
+        </div>
+        <nav class="navbar">
+            <div class="navbar-menu">
+                <ul class="nav-menu nav-menu-visible">
+                    <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-menu-link_active">Home</a>
+                    </li>
+                    <li class="nav-menu-item"><a href="productos.html"
+                            class="nav-menu-link nav-menu-link_active">Productos</a>
+                    </li>
+                    <li class="nav-menu-item"><a href="contacto.html"
+                            class="nav-menu-link nav-menu-link_active">Contacto</a>
+                    </li>
+                    <li class="nav-menu-item"><a href="preguntas.html"
+                            class="nav-menu-link nav-menu-link_active">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="button">
+            <button class="nav-toggle" aria-label="Abrir menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <h1>Menú</h1>
+            </button>
+        </div>
+
+        <section class="cajaContenido">
+            <div class="caja-cont-1">
+                <div class="welcome-title">
+                    <h2>Papelera - Librería - Cotillón</h2>
+                </div>
+                <div class="search-bar">
+                    <nav class="nav-bar">
+                        <form class="barraBuscadora">
+                            <input class="form-search" type="text" name="Buscar" id="" placeholder="Buscar">
+                            <button class="form-btn">Buscar</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+            <div class="caja-cont-2">
+                <div class="welcome-sub">
+                    <h2>¡Bienvenidos a Nuestro Sitio Web!</h2>
+                </div>
+                <div class="catalogo">
+                    <p>Conoce nuestros productos</p>
+                    <a href="productos.html">Catalogo</a>
+                </div>
+            </div>
+            <div class="caja-cont-3">
+                <div class="masVendido">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/proyecto/imagenes/camiseta.jpg" class="d-block w-100" alt="camiseta">
+                                <div class="carousel-caption">
+                                    <h5>Bolsas Camiseta</h5>
+                                    <p>Precio..</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/proyecto/imagenes/consorcio.png" class="d-block w-100" alt="consorcio">
+                                <div class="carousel-caption carousel-caption-cons">
+                                    <h5>Bolsas Consorcio</h5>
+                                    <p>Precio..</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/proyecto/imagenes/arranque.jpeg" class="d-block w-100" alt="arranque">
+                                <div class="carousel-caption">
+                                    <h5>Bolsas Arranque</h5>
+                                    <p>Precio..</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <h3>&copy; Derechos de Autor Reservados a PapeleraCesar</h3>
+        </footer>
+    </div> -->
+
+    <!-- <header class="header">
+        <nav class="nav">
+            <div class="logo"><img src="/proyecto/imagenes/1.png" alt="logo"></div>
+            <div>
+                <ul class="nav-menu nav-menu-visible">
+                    <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-menu-link_active">Home</a>
+                    </li>
+                    <li class="nav-menu-item"><a href="productos.html"
+                            class="nav-menu-link nav-menu-link_active">Productos</a>
+                    </li>
+                    <li class="nav-menu-item"><a href="contacto.html"
+                            class="nav-menu-link nav-menu-link_active">Contacto</a>
+                    </li>
+                    <li class="nav-menu-item"><a href="preguntas.html"
+                            class="nav-menu-link nav-menu-link_active">PreguntasFrecuentes</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social">
+                <div class="redes">
+                    <img src="/proyecto/imagenes/wpp.jpg" alt="whatsapp">
+                </div>
+                <div class="redes">
+                    <img src="/proyecto/imagenes/ig.png" alt="instagram">
+                </div>
+                <div class="redes">
+                    <img src="/proyecto/imagenes/x2.png" alt="x">
+                </div>
+            </div>
+            <button class="nav-toggle" aria-label="Abrir menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <section class="cajaContenido">
+        <div class="body-header">
+            <div class="welcome-title">
+                <p>Papelera - Librería - Cotillón</p>
+            </div>
+            <div class="search-bar">
+                <nav class="nav-bar nav-bar-light bg-light">
+                    <form class="barraBuscadora">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+        <div class="body-content">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni doloribus quasi quia deserunt
+                reprehenderit ipsum eaque commodi, voluptatem quo repudiandae explicabo magnam aliquam minima expedita,
+                ducimus consequatur ipsam cupiditate aliquid?
+                Tempora tempore aut dignissimos labore perspiciatis illum quasi atque earum modi voluptate, itaque
+                placeat porro vitae ipsa facilis rem nisi ad adipisci? Facere illum minima pariatur odit harum nam
+                inventore.
+                Alias non vero ducimus quia velit doloribus aperiam sed, ad pariatur dolorem officia, architecto minima
+                obcaecati odit id labore odio, temporibus laboriosam facilis totam dicta. Illo, reiciendis? Officia, in
+                architecto!
+                Adipisci cumque perferendis hic, laboriosam excepturi vel, quidem quisquam nemo libero pariatur
+                doloribus ipsa temporibus? Qui, unde rerum veritatis ab aliquam expedita totam neque, ad laudantium
+                fugiat obcaecati impedit corrupti!
+                Quo laudantium alias eligendi incidunt culpa possimus, architecto voluptatem nam aliquid vero velit.
+                Sapiente eius error nobis! Blanditiis reiciendis numquam mollitia perspiciatis corporis, maxime,
+                asperiores, minus commodi omnis praesentium dolorem!
+                Blanditiis ut quod laudantium quo possimus illo ipsum? Ipsam culpa dolor cupiditate voluptate error
+                molestias sequi consectetur! Illo cupiditate error itaque eos, aspernatur impedit deserunt soluta,
+                officia neque aut eveniet.
+                Eum ullam nisi dolores consequatur quam laboriosam nulla pariatur iure voluptatibus in exercitationem,
+                eos consectetur voluptate molestiae aliquid alias. Quam assumenda explicabo officia esse iste atque
+                sequi, adipisci optio voluptates.
+                Maxime quam velit aliquam, tenetur accusamus, incidunt, officia neque quos labore consequuntur ab
+                temporibus ullam quis ut pariatur voluptates amet nemo quod nobis laboriosam enim! Tempore ducimus
+                sapiente placeat iste?
+                Quaerat quis maiores nam laudantium sapiente dolor maxime aliquid asperiores quisquam deserunt officia,
+                aliquam voluptatem iusto facere autem deleniti ducimus ad voluptatibus explicabo commodi repudiandae.
+                Voluptatem tempora ea vero. Iusto!
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Derechos de Autor Reservados a PapeleraCesar</p>
+    </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="/proyecto/js/bootstrap.min.js"></script>
+    <script src="/proyecto/script/main.js"></script>
+</body>
+
+</html>
