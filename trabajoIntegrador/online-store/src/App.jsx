@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Products from './components/Products';
-import Cart from './components/Cart';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Secciones/Home';
+import Products from './components/Secciones/Products';
+import Cart from './components/Secciones/Cart';
+import Contact from './components/Secciones/Contact';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [cart, setCart] = useState([]);

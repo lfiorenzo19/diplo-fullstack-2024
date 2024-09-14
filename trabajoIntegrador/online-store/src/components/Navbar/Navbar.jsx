@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import instagramIcon from '../assets/img/ig.png';
-import twitterIcon from '../assets/img/x2.png';
-import whatsappIcon from '../assets/img/wpp.png';
+import instagramIcon from '../../assets/img/ig.png';
+import twitterIcon from '../../assets/img/x2.png';
+import whatsappIcon from '../../assets/img/wpp.png';
 
 function Navbar() {
     return (
