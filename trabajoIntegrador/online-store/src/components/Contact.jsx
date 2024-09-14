@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import Map from './Map'; 
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -18,17 +18,6 @@ function Contact() {
         alert('Mensaje enviado con éxito.');
         setSubmitted(true);
         setFormData({ name: '', email: '', message: '' });
-    };
-
-    const containerStyle = {
-        width: '100%',
-        height: '400px',
-        marginTop: '20px',
-    };
-
-    const location = {
-        lat: -34.62741964456154,
-        lng: -58.481060476367674,
     };
 
     return (
@@ -54,12 +43,8 @@ function Contact() {
                     <p>¡Gracias por contactarnos! Nos pondremos en contacto contigo pronto.</p>
                 </div>
             )}
-        <LoadScript googleMapsApiKey="">
-            <GoogleMap mapContainerStyle={containerStyle} center={location} zoom={15}>
-                <Marker position={location} />
-            </GoogleMap>
-        </LoadScript>
-    </div>
+            <Map />
+        </div>
     );
 }
 

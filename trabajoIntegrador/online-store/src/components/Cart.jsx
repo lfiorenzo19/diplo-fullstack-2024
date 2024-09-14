@@ -1,12 +1,6 @@
 import React from "react";
 
-function Cart({
-    cart,
-    incrementQuantity,
-    decrementQuantity,
-    removeFromCart,
-    clearCart,
-}) {
+function Cart({cart, incrementQuantity, decrementQuantity, removeFromCart, clearCart,}) {
     
     const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 

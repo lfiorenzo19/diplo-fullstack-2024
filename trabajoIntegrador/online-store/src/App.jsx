@@ -54,15 +54,7 @@ function App() {
           <Route
             path="/cart"
             element={
-              <Cart
-                cart={cart}
-                incrementQuantity={incrementQuantity}
-                decrementQuantity={decrementQuantity}
-                removeFromCart={removeFromCart}
-                clearCart={clearCart}
-              />
-            }
-          />
+              <Cart cart={cart} incrementQuantity={incrementQuantity} decrementQuantity={decrementQuantity} removeFromCart={removeFromCart} clearCart={clearCart}/>}/>
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
