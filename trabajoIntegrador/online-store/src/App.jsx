@@ -48,7 +48,7 @@ function App() {
     <div className="App d-flex flex-column min-vh-100">
       <Navbar />
       <div className="container mt-3 flex-grow-1">
-        <Routes>
+        <Routes basename="/diplo-fullstack-2024">
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products addToCart={addToCart} />} />
           <Route
